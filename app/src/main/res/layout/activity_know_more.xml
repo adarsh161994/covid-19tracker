@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorWhite"
+    tools:context=".KnowMoreActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="10dp"
+        app:cardElevation="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coronavirus"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about"
+                    android:textSize="12sp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/symptoms"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_symptoms"
+                    android:textSize="12sp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/precautions"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_precautions"
+                    android:textSize="12sp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/spread"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/how_it_spread"
+                    android:textSize="12sp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/treatment"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recovery"
+                    android:textSize="12sp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginLeft="10dp" />
+
+
+                <Button
+                    android:id="@+id/btnLearnMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="@string/learn_more"
+                    android:textSize="14sp"
+                    android:layout_margin="10dp"
+                    android:textAllCaps="false"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/gilroy_light"
+                    android:textColor="@color/colorWhite"/>
+
+            </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

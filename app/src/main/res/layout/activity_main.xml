@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name_covid_19"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/gilroy_extra_bold"
+            android:textColor="@color/colorWhite"
+            android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="@color/colorWhite"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/infected"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/gilroy_light"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/txtInfected"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cases"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/gilroy_light"
+                    android:textColor="@color/colorRed"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:cardElevation="10dp"
+                android:layout_weight="1"
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="@color/colorWhite"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recovered"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/gilroy_light"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/txtRecoverd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_23564"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/gilroy_light"
+                    android:textColor="@color/colorGreen"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:cardElevation="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/colorWhite"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/deceased"
+                        android:textSize="20sp"
+                        android:layout_margin="5dp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/gilroy_light"
+                        android:textColor="@color/colorBlack"
+                        android:gravity="center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/txtDeceased"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cases"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/gilroy_light"
+                        android:textColor="@color/colorGray"
+                        android:gravity="center_horizontal" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/symptoms"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/gilroy_extra_bold"
+                android:textColor="@color/colorDarkGray"
+                android:layout_marginLeft="15dp" />
+
+            <TextView
+                android:id="@+id/txtViewSymptoms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_all"
+                android:textSize="15sp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/gilroy_light"
+                android:textColor="@color/colorGray"
+                android:layout_marginRight="15dp" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerView"
+            android:orientation="horizontal"
+            tools:listitem="@layout/item_symptoms"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="3"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="137dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@color/colorPrimary"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/to_know_more_about_covid_19"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginLeft="10dp" />
+
+                <Button
+                    android:id="@+id/btnKnowMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more_info"
+                    android:textSize="14sp"
+                    android:layout_marginStart="10dp"
+                    android:textAllCaps="false"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/gilroy_light"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginLeft="10dp" />
+
+            </LinearLayout>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/know" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/precautions"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/gilroy_extra_bold"
+                android:textColor="@color/colorDarkGray"
+                android:layout_marginLeft="15dp" />
+
+            <TextView
+                android:id="@+id/txtViewPrecautions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_all"
+                android:textSize="15sp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/gilroy_light"
+                android:textColor="@color/colorGray"
+                android:layout_marginRight="15dp" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerViewPrecautions"
+            android:orientation="horizontal"
+            tools:listitem="@layout/item_precautions"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="6"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>
